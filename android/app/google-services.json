@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471366946421",
+    "project_id": "roll2win-385d2",
+    "storage_bucket": "roll2win-385d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471366946421:android:d47ec8e34f98e04aab723c",
+        "android_client_info": {
+          "package_name": "com.rolltwowin.in.roll2win"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4nVn1F7JSyNDq8Iu-UMEUjmqHJ9-hts4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
