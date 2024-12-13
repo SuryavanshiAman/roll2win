@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:roll2win/helper/response/status.dart';
 import 'package:roll2win/main.dart';
 import 'package:roll2win/res/app_colors.dart';
+import 'package:roll2win/view_model/delete_notification_view_model.dart';
 import 'package:roll2win/view_model/notification_view_model.dart';
 
 class NotificationScreen extends StatefulWidget {
@@ -24,6 +25,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final delete= Provider.of<DeleteNotificationViewModel>(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: primary,
@@ -101,6 +103,11 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                         fontWeight: FontWeight.w500
                                         // fontWeight: FontWeight.bold
                                         )),
+                                trailing: GestureDetector(
+                                    onTap: (){
+                                      delete.deleteNotificationApi(data[index].id??"",context,);
+                                    },
+                                    child: Icon(Icons.cancel_outlined)),
                               ),
                               Padding(
                                 padding: EdgeInsets.only(left: width * 0.2),
